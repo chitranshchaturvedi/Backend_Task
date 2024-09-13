@@ -35,21 +35,15 @@ This backend provides APIs for a rental property management application where us
    git clone https://github.com/chitranshchaturvedi/Backend_Task
 Install the dependencies:
 
-bash
-Copy code
 cd rental-app
 npm install
 Set up the backend server (assuming you have already set up the Node.js, Express, and MongoDB backend):
 
-bash
-Copy code
 cd backend
 npm install
 npm start
 Start the React frontend:
 
-bash
-Copy code
 cd frontend
 npm start
 Open http://localhost:3000 to view the application in the browser.
@@ -73,9 +67,6 @@ Commit and push your changes (git push origin feature-branch).
 Open a pull request.
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-csharp
-Copy code
 
 This README provides an overview of the app, including setup instructions, routes, and features.
 [9:59 pm, 13/9/2024] niKhiL RaJpuT Bhaiya : Rental Property Management & Trip Planning Backend
@@ -115,65 +106,3 @@ Method	Endpoint	Description
 GET	/api/users/:userId/trips	Get all trips planned by a user
 GET	/api/users/:userId/wishlist	Get all wishlist items for a user
 GET	/api/users/:userId/profile	Get user profile information
-Installation
-Clone the repository:
-
-bash
-Copy code
-git clone [https://github.com/your-username/rental-app-backend.git](https://github.com/chitranshchaturvedi/Backend_Task/tree/main)
-Navigate into the project directory:
-
-bash
-Copy code
-cd rental-app-backend
-Install dependencies:
-
-bash
-Copy code
-npm install
-Set up the environment variables. Create a .env file in the root directory with the following values:
-
-env
-Copy code
-MONGO_URI=<your-mongodb-connection-string>
-JWT_SECRET=<your-jwt-secret>
-PORT=5000
-Start the server:
-
-bash
-Copy code
-npm start
-The server will run on http://localhost:5000.
-
-Usage
-Register a User
-Endpoint: POST /api/auth/register
-Description: Registers a new user and returns a JWT for authentication.
-Create a Property Listing
-Endpoint: POST /api/listings
-Description: Authenticated users can create a new property listing.
-Plan a Trip and Let Others Join
-Endpoint: POST /api/bookings
-Description: Authenticated users can plan a trip. Others can join with PUT /api/bookings/:bookingId/join.
-Get User's Trips
-Endpoint: GET /api/users/:userId/trips
-Description: Retrieve all trips that a user has planned.
-Image Uploads
-The folder /public/uploads/ stores all image uploads for the listings.
-Images are uploaded via multipart/form-data through the listing creation endpoint.
-Dependencies
-Express.js: Fast, unopinionated, minimalist web framework for Node.js.
-Mongoose: Elegant MongoDB object modeling for Node.js.
-JWT (jsonwebtoken): For user authentication.
-bcryptjs: For hashing passwords.
-multer: For handling multipart/form-data, used for uploading images.
-Contributing
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes.
-Commit and push your changes (git push origin feature-branch).
-Open a pull request.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-yaml
